@@ -21,11 +21,15 @@ public class AsteroidSpawnMaster : MonoBehaviour {
         spawnCount++;
 	}
     void spawnAsteroid () {
+        //INSTANTIATE (Slide 23)
         GameObject asteroid = (GameObject)Instantiate(asteroidPrefab, transform.position, transform.rotation);
+        //RANDOM DIRECTIONS (Slide 32)
         float xComponent = Random.Range(-1.0f, -0.1f);
         float yComponent = Random.Range(-1.0f, 1.0f);
         Vector2 dir = new Vector2(xComponent, yComponent);
         //asteroid.GetComponent<Rigidbody2D>().AddForce(-Vector2.right * 200f);
+
+        //ADDING FORCE (Slide 20)
         asteroid.GetComponent<Rigidbody2D>().AddForce(dir * 200f);
     }
 }

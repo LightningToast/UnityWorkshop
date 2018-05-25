@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 50522986955653938}
   - component: {fileID: 61139410862646888}
   m_Layer: 0
-  m_Name: BasicSprite(Rigidbody2D+Collider2D)
+  m_Name: BasicSpriteMaster(Rigidbody2D+Collider2D)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

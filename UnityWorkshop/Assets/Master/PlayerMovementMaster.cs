@@ -13,7 +13,9 @@ public class PlayerMovementMaster : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        //KEYBOARD INPUTS (Slide 19)
         if(Input.GetKey("w")) {
+            //ADDING FORCE (Slide 20)
             rb.AddForce(Vector2.up * moveSpeed);
         }
 
@@ -30,6 +32,7 @@ public class PlayerMovementMaster : MonoBehaviour {
             rb.AddForce(-Vector2.right * moveSpeed);
         }
 	}
+    // GAME OVER EXERCISE (Slide 33)
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.gameObject.tag.Equals("EnemyMaster"))

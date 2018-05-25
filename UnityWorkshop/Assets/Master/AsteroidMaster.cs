@@ -14,7 +14,10 @@ public class AsteroidMaster : MonoBehaviour {
 		
 	}
     private void OnCollisionEnter2D(Collision2D collision) {
+        //ONCOLLISIONENTER2D (Slide 26)
+        //TAGS (Slide 27)
         if(collision.collider.gameObject.tag.Equals("ProjectileMaster")) {
+            //ANIMATION VARIABLES (Slide 30)
             //GetComponent<Animator>().SetTrigger("Destroy");
             //Destroy(this.gameObject);
 
@@ -22,10 +25,14 @@ public class AsteroidMaster : MonoBehaviour {
             StartCoroutine(WaitSeconds());
         }
     }
+    //ADDING A TIME DELAY (Slide 31)
     IEnumerator WaitSeconds()
     {
+        //ANIMATION VARIABLES (Slide 30)
         GetComponent<Animator>().SetTrigger("Destroy");
+
         yield return new WaitForSeconds(1);
+        //DESTROY (Slide 25)
         Destroy(this.gameObject);
     }
 }
