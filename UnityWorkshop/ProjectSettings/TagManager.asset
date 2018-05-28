@@ -6,8 +6,6 @@ TagManager:
   tags:
   - ProjectileMaster
   - EnemyMaster
-  - Enemy
-  - Laser
   layers:
   - Default
   - TransparentFX
@@ -21,9 +19,9 @@ TagManager:
   - ProjectileMaster
   - EnemyMaster
   - WallMaster
-  - Projectile
-  - Ship
-  - Wall
+  - 
+  - 
+  - 
   - 
   - 
   - 
